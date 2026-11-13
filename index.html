@@ -1,0 +1,86 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kansai Explorer | 關西旅遊指南</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>    
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <h2>Kansai Explorer</h2>
+
+            <ul>
+                <li><a href="index.html">首頁</a></li>
+                <li><a href="osaka.html">大阪</a></li>
+                <li><a href="kyoto.html">京都</a></li>
+                <li><a href="nara.html">奈良</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>探索日本關西之美</h1>
+            <p>從大阪的熱鬧街道，到京都的歷史文化，
+            再到奈良的自然風景。</p>
+        </section>
+
+
+    <section class="destinations">
+        <h2>熱門旅遊景點</h2>
+        <p>選擇你感興趣的景點類型：</p>
+
+        <div class="filters">
+            <button data-filter="all">全部</button>
+            <button data-filter="food">美食</button>
+            <button data-filter="history">歷史</button>
+            <button data-filter="culture">文化</button>
+            <button data-filter="nature">自然</button>
+        </div>
+
+        <div class="spot-grid">
+
+            <div class="spot-card" data-category="food">
+                <img src="images/dotonbori.jpg"
+                    alt="大阪道頓堀街道">
+                <h3>道頓堀</h3>
+                <p>大阪最具代表性的美食與購物街區。</p>
+                <a href="osaka.html">了解更多</a>
+            </div>
+
+            <div class="spot-card" data-category="history">
+                <img src="images/osaka-castle.jpg"
+                    alt="大阪城天守閣">
+                <h3>大阪城</h3>
+                <p>探索大阪歷史與壯觀的城堡建築。</p>
+                <a href="osaka.html">了解更多</a>
+            </div>
+
+            <div class="spot-card" data-category="culture">
+                <img src="images/fushimi-inari.jpg"
+                    alt="京都伏見稻荷大社千本鳥居">
+                <h3>伏見稻荷大社</h3>
+                <p>欣賞著名的千本鳥居與日本神社文化。</p>
+                <a href="kyoto.html">了解更多</a>
+            </div>
+
+            <div class="spot-card" data-category="nature">
+                <img src="images/nara-park.jpg"
+                    alt="奈良公園的鹿">
+                <h3>奈良公園</h3>
+                <p>漫步在公園中，欣賞自然景觀與鹿群。</p>
+                <a href="nara.html">了解更多</a>
+            </div>
+
+        </div>
+    </section>
+
+    </main>
+    <script src="js/main.js"></script>
+</body>
+</html>

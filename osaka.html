@@ -1,0 +1,149 @@
+
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <title>大阪旅遊 | Kansai Explorer</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>    
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <h2>Kansai Explorer</h2>
+            <ul>
+                <li><a href="index.html">首頁</a></li>
+                <li><a href="osaka.html">大阪</a></li>
+                <li><a href="kyoto.html">京都</a></li>
+                <li><a href="nara.html">奈良</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- 大阪封面 -->
+        <section class="hero osaka-hero">
+            <h1>探索大阪 Osaka</h1>
+            <p>充滿美食、娛樂與歷史文化的城市</p>
+        </section>
+
+        <!-- 大阪介紹 -->
+        <section class="osaka-intro">
+            <h2>歡迎來到大阪</h2>
+            <p>
+                大阪是日本關西地區的代表性城市，
+                以熱鬧的街道、豐富的美食
+                和歷史悠久的建築聞名。
+            </p>
+        </section>
+
+        <!-- 旅遊景點 -->
+        <section class="destinations">
+            <h2>大阪熱門景點</h2>
+
+            <div class="spot-grid">
+                <div class="spot-card">
+                    <img src="images/dotonbori.jpg"
+                         alt="道頓堀">
+                    <h3>道頓堀</h3>
+                    <p>
+                        大阪著名的美食街，
+                        可以品嚐章魚燒、大阪燒等料理。
+                    </p>
+                </div>
+
+                <div class="spot-card">
+                    <img src="images/osaka-castle.jpg"
+                         alt="大阪城">
+                    <h3>大阪城</h3>
+                    <p>
+                        大阪著名的歷史建築，
+                        周圍有美麗的大阪城公園。
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 互動行程 -->
+        <section class="trip-plan">
+            <h2>大阪一日遊推薦行程</h2>
+            <p>選擇你想探索的時間：</p>
+
+            <div class="plan-buttons">
+                <button id="day-plan">
+                    白天行程
+                </button>
+
+                <button id="night-plan">
+                    夜晚行程
+                </button>
+            </div>
+
+            <div id="trip-result" aria-live="polite">
+                <h3>白天行程</h3>
+                <p>09:00 大阪城公園</p>
+                <p>12:00 大阪特色午餐</p>
+                <p>14:00 心齋橋購物</p>
+            </div>
+        </section>
+
+
+        <section class="travel-info">
+        <h2>大阪景點旅遊資訊</h2>
+        <table>
+            <tr>
+                <th>景點名稱</th>
+                <th>景點特色</th>
+                <th>建議停留時間</th>
+            </tr>
+
+            <tr>
+                <td>大阪城</td>
+                <td>歷史建築</td>
+                <td>1～2 小時</td>
+            </tr>
+
+            <tr>
+                <td>道頓堀</td>
+                <td>美食與購物</td>
+                <td>2～3 小時</td>
+            </tr>
+
+            <tr>
+                <td>心齋橋</td>
+                <td>購物商圈</td>
+                <td>1～2 小時</td>
+            </tr>
+        </table>
+         </section>
+
+        <!-- 大阪官方旅遊網站 -->
+        <section class="official-link">
+            <h2>更多大阪旅遊資訊</h2>
+
+            <p>
+                想了解更多大阪景點與旅遊活動，
+                可以參考大阪官方旅遊網站。
+            </p>
+
+            <a href="https://osaka-info.jp/"
+               target="_blank"
+               rel="noopener noreferrer">
+                前往大阪官方旅遊網站
+            </a>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 Kansai Explorer</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

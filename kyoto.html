@@ -1,0 +1,170 @@
+
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>京都旅遊 | Kansai Explorer</title>
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- 導覽列 -->
+    <header>
+        <nav>
+            <h2>Kansai Explorer</h2>
+
+            <ul>
+                <li><a href="index.html">首頁</a></li>
+                <li><a href="osaka.html">大阪</a></li>
+                <li><a href="kyoto.html">京都</a></li>
+                <li><a href="nara.html">奈良</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- 京都封面 -->
+        <section class="hero kyoto-hero">
+            <h1>探索京都 Kyoto</h1>
+            <p>
+                走進千年古都，感受日本傳統文化之美。
+            </p>
+        </section>
+
+        <!-- 京都介紹 -->
+        <section class="kyoto-intro">
+            <h2>歡迎來到京都</h2>
+            <p>
+                京都是日本著名的歷史文化城市，
+                擁有許多古老神社、寺廟與傳統街道。
+                無論是春天的櫻花、秋天的楓葉，
+                還是充滿歷史感的建築，
+                都能讓旅客體驗獨特的日本文化。
+            </p>
+        </section>
+
+        <!-- 景點介紹 -->
+        <section class="kyoto-section">
+
+            <h2>京都熱門景點</h2>
+            <p>點擊查看更多，探索景點特色。</p>
+
+            <div class="kyoto-grid">
+
+                <!-- 伏見稻荷大社 -->
+                <div class="kyoto-card">
+                    <img src="images/fushimi-inari.jpg"
+                         alt="伏見稻荷大社千本鳥居">
+
+                    <div class="kyoto-content">
+                        <h3>伏見稻荷大社</h3>
+                        <p>
+                            以壯觀的千本鳥居聞名，
+                            是京都代表性的神社。
+                        </p>
+
+                        <button class="kyoto-more-btn"
+                                type="button"
+                                aria-expanded="false">
+                            查看更多
+                        </button>
+
+                        <div class="kyoto-extra" hidden>
+                            <h4>景點特色</h4>
+                            <p>
+                                成排的朱紅色鳥居形成
+                                一條美麗的參拜步道，
+                                非常適合拍照與散步。
+                            </p>
+                            <p>推薦活動：參拜、攝影</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 清水寺 -->
+                <div class="kyoto-card">
+                    <img src="images/kiyomizu-dera.jpg"
+                         alt="京都清水寺">
+
+                    <div class="kyoto-content">
+                        <h3>清水寺</h3>
+                        <p>
+                            京都著名的歷史寺廟，
+                            可以欣賞京都市區景色。
+                        </p>
+
+                        <button class="kyoto-more-btn"
+                                type="button"
+                                aria-expanded="false">
+                            查看更多
+                        </button>
+
+                        <div class="kyoto-extra" hidden>
+                            <h4>景點特色</h4>
+                            <p>
+                                清水寺以木造舞台聞名，
+                                周圍有二年坂與三年坂，
+                                充滿傳統日式風情。
+                            </p>
+                            <p>推薦活動：賞楓、文化體驗</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 嵐山 -->
+                <div class="kyoto-card">
+                    <img src="images/arashiyama.jpg"
+                         alt="京都嵐山竹林">
+
+                    <div class="kyoto-content">
+                        <h3>嵐山竹林</h3>
+                        <p>
+                            漫步在高聳的竹林之間，
+                            欣賞京都的自然美景。
+                        </p>
+
+                        <button class="kyoto-more-btn"
+                                type="button"
+                                aria-expanded="false">
+                            查看更多
+                        </button>
+
+                        <div class="kyoto-extra" hidden>
+                            <h4>景點特色</h4>
+                            <p>
+                                嵐山擁有美麗的竹林步道，
+                                附近也有渡月橋，
+                                非常適合悠閒散步。
+                            </p>
+                            <p>推薦活動：健行、攝影</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 Kansai Explorer</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+
+</body>
+</html>

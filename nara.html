@@ -1,0 +1,221 @@
+
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>奈良旅遊 | Kansai Explorer</title>
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- 導覽列 -->
+    <header>
+        <nav>
+            <h2>Kansai Explorer</h2>
+            <ul>
+                <li><a href="index.html">首頁</a></li>
+                <li><a href="osaka.html">大阪</a></li>
+                <li><a href="kyoto.html">京都</a></li>
+                <li><a href="nara.html">奈良</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- 奈良封面 -->
+        <section class="hero nara-hero">
+            <h1>探索奈良 Nara</h1>
+            <p>
+                與可愛的鹿群相遇，
+                感受古都的自然與歷史。
+            </p>
+        </section>
+
+        <!-- 奈良介紹 -->
+        <section class="nara-intro">
+            <h2>歡迎來到奈良</h2>
+            <p>
+                奈良是日本歷史悠久的古都，
+                擁有豐富的文化遺產與自然景觀。
+                最具代表性的奈良公園，
+                可以看到自由活動的鹿群。
+            </p>
+        </section>
+
+        <!-- 景點介紹 -->
+        <section class="nara-attractions">
+            <h2>奈良熱門景點</h2>
+            <p>探索奈良最具特色的自然與文化景點</p>
+
+            <div class="nara-grid">
+
+                <article class="nara-card">
+                    <img src="images/nara-park.jpg"
+                         alt="奈良公園的鹿">
+
+                    <div class="nara-card-content">
+                        <h3>奈良公園</h3>
+                        <p>
+                            奈良最著名的景點之一。
+                            在廣闊的公園裡，
+                            可以近距離觀察自由活動的鹿。
+                        </p>
+                    </div>
+                </article>
+
+                <article class="nara-card">
+                    <img src="images/todaiji.jpg"
+                         alt="奈良東大寺">
+
+                    <div class="nara-card-content">
+                        <h3>東大寺</h3>
+                        <p>
+                            日本著名的佛教寺院，
+                            以巨大的佛像和壯觀的
+                            大佛殿聞名。
+                        </p>
+                    </div>
+                </article>
+
+                <article class="nara-card">
+                    <img src="images/kasuga-taisha.jpg"
+                         alt="春日大社">
+
+                    <div class="nara-card-content">
+                        <h3>春日大社</h3>
+                        <p>
+                            擁有朱紅色神社建築、
+                            石燈籠與美麗的森林步道，
+                            充滿傳統文化氣息。
+                        </p>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- 奈良旅遊知識測驗 -->
+        <section class="nara-quiz-section">
+
+            <h2>奈良旅遊小測驗</h2>
+            <p>
+                你對奈良了解多少？
+                完成三道題目，看看自己能得幾分！
+            </p>
+
+            <form id="nara-quiz">
+
+                <fieldset class="quiz-question">
+                    <legend>
+                        Q1. 奈良公園最有名的動物是？
+                    </legend>
+
+                    <label>
+                        <input type="radio"
+                               name="q1" value="a">
+                        貓
+                    </label>
+
+                    <label>
+                        <input type="radio"
+                               name="q1" value="b">
+                        鹿
+                    </label>
+
+                    <label>
+                        <input type="radio"
+                               name="q1" value="c">
+                        狐狸
+                    </label>
+                </fieldset>
+
+                <fieldset class="quiz-question">
+                    <legend>
+                        Q2. 東大寺最著名的是？
+                    </legend>
+
+                    <label>
+                        <input type="radio"
+                               name="q2" value="a">
+                        東京鐵塔
+                    </label>
+
+                    <label>
+                        <input type="radio"
+                               name="q2" value="b">
+                        大佛
+                    </label>
+
+                    <label>
+                        <input type="radio"
+                               name="q2" value="c">
+                        富士山
+                    </label>
+                </fieldset>
+
+                <fieldset class="quiz-question">
+                    <legend>
+                        Q3. 餵食奈良公園的鹿，
+                        應該使用哪種食物？
+                    </legend>
+
+                    <label>
+                        <input type="radio"
+                               name="q3" value="a">
+                        鹿仙貝
+                    </label>
+
+                    <label>
+                        <input type="radio"
+                               name="q3" value="b">
+                        巧克力
+                    </label>
+
+                    <label>
+                        <input type="radio"
+                               name="q3" value="c">
+                        洋芋片
+                    </label>
+                </fieldset>
+
+                <div class="quiz-buttons">
+                    <button type="submit">
+                        提交答案
+                    </button>
+
+                    <button type="reset">
+                        重新作答
+                    </button>
+                </div>
+
+                <div id="nara-result"
+                     aria-live="polite"></div>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 Kansai Explorer</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+
+</body>
+</html>

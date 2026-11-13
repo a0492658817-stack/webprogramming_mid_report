@@ -1,0 +1,680 @@
+
+/* 整體設定 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, "Microsoft JhengHei", sans-serif;
+    background-color: #f5f7fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* 導覽列 */
+header {
+    background-color: #406d92;
+    padding: 20px 8%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h2 {
+    color: white;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ffcc80;
+}
+
+/* 首頁大圖 */
+.hero {
+    min-height: 420px;
+    background:
+        linear-gradient(
+            rgba(0, 0, 0, 0.45),
+            rgba(0, 0, 0, 0.45)
+        ),
+        url("../images/kansai-banner.jpg")
+        center / cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 30px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 20px;
+    max-width: 650px;
+}
+
+/* 景點區域 */
+.destinations {
+    padding: 60px 8%;
+    text-align: center;
+}
+
+.destinations h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+/* 篩選按鈕 */
+.filters {
+    margin: 30px 0;
+}
+
+.filters button {
+    padding: 12px 25px;
+    margin: 5px;
+    border: none;
+    border-radius: 25px;
+    background-color: #e0e0e0;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.filters button:hover,
+.filters button.active {
+    background-color: #4a87b9;
+    color: white;
+}
+
+/* 景點卡片 */
+.spot-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.spot-card {
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    padding-bottom: 25px;
+    transition: 0.3s;
+}
+
+.spot-card:hover {
+    transform: translateY(-8px);
+}
+
+.spot-card img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+}
+
+.spot-card h3 {
+    margin: 15px 0 10px;
+    font-size: 24px;
+}
+
+.spot-card p {
+    padding: 0 20px;
+    margin-bottom: 20px;
+}
+
+.spot-card a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #1e588a;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+/* 篩選時隱藏卡片 */
+.spot-card[hidden] {
+    display: none;
+}
+
+
+
+/* 大阪封面 */
+.osaka-hero {
+    background:
+        linear-gradient(
+            rgba(0, 0, 0, 0.4),
+            rgba(0, 0, 0, 0.4)
+        ),
+        url("../images/osaka-castle.jpg")
+        center / cover;
+}
+
+/* 大阪介紹 */
+.osaka-intro {
+    text-align: center;
+    padding: 60px 10%;
+}
+
+.osaka-intro h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.osaka-intro p {
+    max-width: 700px;
+    margin: auto;
+    font-size: 18px;
+}
+
+/* 一日遊行程 */
+.trip-plan {
+    padding: 60px 20px;
+    background-color: #eef3f7;
+    text-align: center;
+}
+
+.trip-plan h2 {
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.plan-buttons {
+    margin: 25px 0;
+}
+
+.plan-buttons button {
+    padding: 12px 25px;
+    margin: 5px;
+    border: none;
+    border-radius: 8px;
+    background-color: #162d40;
+    color: white;
+    cursor: pointer;
+}
+
+.plan-buttons button:hover {
+    background-color: #356284;
+}
+
+#trip-result {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+#trip-result h3 {
+    margin-bottom: 15px;
+}
+
+#trip-result p {
+    margin: 10px 0;
+}
+
+/* 頁尾 */
+footer {
+    padding: 25px;
+    background-color: #162d40;
+    color: white;
+    text-align: center;
+}
+
+/* 全站字體 */
+body {
+    font-family: "Noto Sans TC", sans-serif;
+    font-size: 20px;
+    line-height: 1.8;
+}
+
+/* 首頁大標題 */
+.hero h1 {
+    font-size: 52px;
+    font-weight: 700;
+}
+
+/* 首頁介紹文字 */
+.hero p {
+    font-size: 24px;
+}
+
+/* 景點區域標題 */
+.destinations h2,
+.osaka-intro h2 {
+    font-size: 36px;
+}
+
+/* 景點卡片標題 */
+.spot-card h3 {
+    font-size: 28px;
+}
+
+/* 景點卡片內文 */
+.spot-card p {
+    font-size: 20px;
+}
+
+/* 大阪介紹文字 */
+.osaka-intro p {
+    font-size: 22px;
+}
+
+/* 一日遊標題 */
+.trip-plan h2 {
+    font-size: 34px;
+}
+
+.travel-info {
+    padding: 50px 8%;
+    text-align: center;
+}
+
+.travel-info h2 {
+    margin-bottom: 25px;
+    font-size: 30px;
+}
+
+.travel-info table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.travel-info th,
+.travel-info td {
+    border: 1px solid #ccc;
+    padding: 15px;
+    font-size: 20px;
+}
+
+.travel-info th {
+    background-color: #162d40;
+    color: white;
+}
+
+.travel-info tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.official-link {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f5f7fa;
+}
+
+.official-link h2 {
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.official-link p {
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+.official-link a {
+    display: inline-block;
+    background-color: #162d40;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 20px;
+}
+
+.official-link a:hover {
+    background-color: #356284;
+}
+
+
+/* ========== 京都頁面 ========== */
+
+/* 京都封面 */
+.kyoto-hero {
+    background:
+        linear-gradient(
+            rgba(0, 0, 0, 0.3),
+            rgba(0, 0, 0, 0.3)
+        ),
+        url("../images/arashiyama.jpg")
+        center / cover no-repeat;
+}
+
+/* 京都介紹 */
+.kyoto-intro {
+    padding: 70px 10%;
+    text-align: center;
+}
+
+.kyoto-intro h2 {
+    font-size: 36px;
+    margin-bottom: 25px;
+}
+
+.kyoto-intro p {
+    font-size: 20px;
+    line-height: 1.9;
+    max-width: 850px;
+    margin: auto;
+}
+
+/* 景點區域 */
+.kyoto-section {
+    padding: 60px 8%;
+    background-color: #f6f4f0;
+    text-align: center;
+}
+
+.kyoto-section h2 {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+/* 三欄卡片 */
+.kyoto-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    max-width: 1200px;
+    margin: 40px auto 0;
+}
+
+/* 卡片外觀 */
+.kyoto-card {
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.kyoto-card:hover {
+    transform: translateY(-8px);
+}
+
+.kyoto-card img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+}
+
+.kyoto-content {
+    padding: 25px;
+}
+
+.kyoto-content h3 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.kyoto-content p {
+    font-size: 20px;
+    line-height: 1.8;
+}
+
+/* 查看更多按鈕 */
+.kyoto-more-btn {
+    background-color: #8a574a;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 6px;
+    margin-top: 20px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.kyoto-more-btn:hover {
+    background-color: #633e35;
+}
+
+/* 展開的景點資訊 */
+.kyoto-extra {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f8f3ef;
+    border-radius: 8px;
+    text-align: left;
+}
+
+.kyoto-extra[hidden] {
+    display: none;
+}
+
+.kyoto-extra h4 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.kyoto-extra p {
+    margin-bottom: 10px;
+}
+
+/* 手機版 */
+@media (max-width: 768px) {
+    .kyoto-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .kyoto-intro {
+        padding: 40px 6%;
+    }
+
+    .kyoto-card img {
+        height: 240px;
+    }
+
+    .kyoto-intro h2,
+    .kyoto-section h2 {
+        font-size: 30px;
+    }
+}
+
+/* ========== 奈良頁面 ========== */
+
+/* 奈良封面 */
+.nara-hero {
+    background:
+        linear-gradient(
+            rgba(0, 0, 0, 0.3),
+            rgba(0, 0, 0, 0.3)
+        ),
+        url("../images/nara-park.jpg")
+        center / cover no-repeat;
+}
+
+/* 奈良介紹 */
+.nara-intro {
+    text-align: center;
+    padding: 70px 10%;
+}
+
+.nara-intro h2 {
+    font-size: 36px;
+    margin-bottom: 25px;
+}
+
+.nara-intro p {
+    font-size: 20px;
+    line-height: 1.9;
+    max-width: 850px;
+    margin: auto;
+}
+
+/* 景點區域 */
+.nara-attractions {
+    background-color: #f0f5f1;
+    padding: 60px 8%;
+    text-align: center;
+}
+
+.nara-attractions h2 {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+/* 景點卡片排列 */
+.nara-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    max-width: 1200px;
+    margin: 40px auto 0;
+}
+
+.nara-card {
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.nara-card:hover {
+    transform: translateY(-8px);
+}
+
+.nara-card img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+}
+
+.nara-card-content {
+    padding: 25px;
+}
+
+.nara-card h3 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.nara-card p {
+    font-size: 20px;
+    line-height: 1.8;
+}
+
+/* ========== 小測驗 ========== */
+
+.nara-quiz-section {
+    padding: 70px 8%;
+    text-align: center;
+    background-color: #fff;
+}
+
+.nara-quiz-section h2 {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+#nara-quiz {
+    max-width: 750px;
+    margin: 40px auto 0;
+    text-align: left;
+}
+
+/* 每一道題目 */
+.quiz-question {
+    border: 1px solid #d7e4dc;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 25px;
+    background-color: #f5f9f6;
+}
+
+.quiz-question legend {
+    font-size: 22px;
+    font-weight: 700;
+    padding: 0 8px;
+}
+
+/* 選項 */
+.quiz-question label {
+    display: block;
+    margin: 12px 0;
+    padding: 12px;
+    font-size: 20px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.quiz-question label:hover {
+    background-color: #e0eee5;
+}
+
+.quiz-question input {
+    margin-right: 10px;
+    accent-color: #31574c;
+}
+
+/* 測驗按鈕 */
+.quiz-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.quiz-buttons button {
+    padding: 12px 30px;
+    border: none;
+    border-radius: 8px;
+    background-color: #31574c;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.quiz-buttons button:hover {
+    background-color: #477965;
+}
+
+/* 分數顯示 */
+#nara-result {
+    margin-top: 25px;
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    color: #31574c;
+}
+
+/* 手機排版 */
+@media (max-width: 768px) {
+    .nara-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .nara-intro {
+        padding: 40px 6%;
+    }
+
+    .nara-intro h2,
+    .nara-attractions h2,
+    .nara-quiz-section h2 {
+        font-size: 30px;
+    }
+}
